@@ -1,6 +1,6 @@
 {
   "name": "docx-parser",
-  "version": "0.1.11",
+  "version": "0.2.1",
   "description": "docx parser",
   "main": "index.js",
   "scripts": {},
@@ -11,8 +11,6 @@
   "dependencies": {
     "decompress": "^4.0.0"
   },
-  "readme": "Docx-parser\n===================\n\n\nA simple module to get the plain text from a docx file.\n\n----------\n\n**exemple**\n```\nvar docxParser = require('docx-parser');\n\ndocxParser.parseDocx(\"example.docx\", function(data){\n        console.log(data)\n})\n```\n",
-  "readmeFilename": "README.md",
   "_id": "docx-parser@0.1.10",
   "_shasum": "29cefda841c5d671c8ad3fa37d91b1f5cb69bc0f",
   "_from": "docx-parser@latest"

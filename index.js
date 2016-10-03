@@ -8,7 +8,7 @@ var parseDocx = function(filename, callback){
    	     return console.log(err);
  	     }
 
-    	var plain_text = data.replace(/(<([^>]+)>)/ig, "");
+    	var plain_text = data.replace(/(<w:p )[\s\S]*?>/g,"\n<w:p").replace(/(<([^>]+)>)/ig, "");
     	callback(plain_text);
     });
   });
